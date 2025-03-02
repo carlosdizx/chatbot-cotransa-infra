@@ -6,3 +6,4 @@ src/**/.terraform.lock.hcl
 src/**/.terraform/
 src/**/scripts/
 src/**/terraform.tfvars
+src/**/output
