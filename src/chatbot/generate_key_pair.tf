@@ -12,3 +12,8 @@ resource "local_file" "public_key_file" {
   content  = tls_private_key.keys.public_key_openssh
   filename = "${path.module}/output/public_key.pub"
 }
+
+resource "aws_key_pair" "deployer_key" {
+  key_name   = "deployer_key"
+  public_key = tls_private_key.keys.public_key_openssh
+}
