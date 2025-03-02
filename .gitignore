@@ -1,0 +1,8 @@
+.idea/
+
+src/**/terraform.tfstate
+src/**/terraform.tfstate.backup
+src/**/.terraform.lock.hcl
+src/**/.terraform/
+src/**/scripts/
+src/**/terraform.tfvars
