@@ -5,7 +5,7 @@ output "output_ec2_ip_public" {
 
 output "output_ec2_connect_ssh" {
   description = "Instrucciones para conectarse por SSH"
-  value = <<-EOT
+  value       = <<-EOT
     Ejecuta (Unix/Linux):
       chmod 400 ${local_file.private_key_file.filename}
     Luego, conéctate con:

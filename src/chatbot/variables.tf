@@ -25,3 +25,16 @@ variable "subnets_main_cidr" {
   description = "Direcciones ips de la vpc para las subnets"
   type        = list(string)
 }
+
+# DynamoDB
+variable "dynamodb_table_name" {
+  description = "Nombre de la tabla DynamoDB"
+  type        = string
+  default     = "documents"
+}
+
+variable "dynamodb_hash_key" {
+  description = "Clave primaria hash de la tabla"
+  type        = string
+  default     = "id"
+}
