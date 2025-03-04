@@ -1,7 +1,11 @@
 output "s3_bucket_name" {
-  value = aws_s3_bucket.public_bucket.bucket
+  value = aws_s3_bucket.main_bucket.bucket
 }
 
-output "s3_bucket_url" {
-  value = "https://${aws_s3_bucket.public_bucket.bucket}.s3.amazonaws.com"
+output "cloudfront_url" {
+  value = "https://${aws_cloudfront_distribution.cotransa_cloudfront.domain_name}"
+}
+
+output "cloudfront_url_csv" {
+  value = "https://${aws_cloudfront_distribution.cotransa_cloudfront.domain_name}/normative_embeddings_cache.csv"
 }
