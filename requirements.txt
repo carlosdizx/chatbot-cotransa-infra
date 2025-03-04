@@ -2,3 +2,6 @@ python-dotenv
 requests
 boto3
 PyPDF2
+openai
+numpy
+pandas
