@@ -8,4 +8,5 @@ def load_config() -> dict:
     return {
         "PDF_LIST_FILE": os.getenv("PDF_LIST_FILE", "../data/URLsS3.txt"),
         "S3_BUCKET_NAME": os.getenv("S3_BUCKET_NAME"),
+        "OPEN_AI_API_KEY": os.getenv("OPEN_AI_API_KEY"),
     }
