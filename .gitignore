@@ -10,3 +10,7 @@ src/**/output
 src/**/.terraform.tfstate.lock.info
 
 .venv
+
+# Enviroments
+.env
+.env.**
