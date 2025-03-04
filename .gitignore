@@ -8,3 +8,5 @@ src/**/scripts/
 src/**/terraform.tfvars
 src/**/output
 src/**/.terraform.tfstate.lock.info
+
+.venv
